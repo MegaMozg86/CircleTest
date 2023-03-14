@@ -50,7 +50,7 @@ namespace CirclesTest
             Task task = new Task(() =>
             {
                 if (X - Radius < 0 || X + Radius > windowWidth)
-                    Angle = 3.14 - Angle;
+                    Angle = Math.PI - Angle;
 
                 if (Y - Radius < 0 || Y + Radius > windowHeight)
                     Angle = Angle * -1;
