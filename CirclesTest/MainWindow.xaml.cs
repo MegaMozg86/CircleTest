@@ -82,7 +82,8 @@ namespace CirclesTest
 
         private void RemoveCircle()
         {
-            _circles.Remove(_circles[0]);
+            if(_circles.Count > 0)
+                _circles.Remove(_circles[0]);
         }
 
         private void ChangeSpeed(bool slowly = false)
